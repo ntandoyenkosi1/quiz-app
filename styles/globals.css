@@ -1,4 +1,21 @@
-html,
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* create a progress bar animation that lasts for 3 seconds*/
+.progress-bar {
+  animation: progress-bar-stripes 3s linear infinite;
+}
+@keyframes progress-bar-stripes {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 0;
+  }
+}
+
+/* html,
 body {
   padding: 0;
   margin: 0;
@@ -13,4 +30,4 @@ a {
 
 * {
   box-sizing: border-box;
-}
+} */
